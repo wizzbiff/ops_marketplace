@@ -1,0 +1,12 @@
+{
+  "name": "executive_ops",
+  "version": "1.0.0",
+  "description": "Executive operations toolkit. Board metrics standard and the monthly board pack command, with quarter-to-date OKR progress.",
+  "author": {
+    "name": "{{OWNER_NAME}}"
+  },
+  "keywords": ["executive", "board", "metrics", "okr", "finance", "operations"],
+  "requires": {
+    "plugins": ["house_standards"]
+  }
+}

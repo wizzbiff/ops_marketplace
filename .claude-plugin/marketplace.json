@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Private marketplace of operations plugins. House standards plus per domain toolkits.",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
@@ -18,7 +18,13 @@
     {
       "name": "engineering_ops",
       "source": "./plugins/engineering_ops",
-      "description": "Engineering operations toolkit. Ticket health standards and the morning report command. Depends on house_standards.",
+      "description": "Engineering operations toolkit. Ticket health, personal triage, research, and flow standards, with the morning report, daily personal brief, ticket research, and weekly leadership rollup commands. Depends on house_standards.",
+      "version": "2.0.0"
+    },
+    {
+      "name": "executive_ops",
+      "source": "./plugins/executive_ops",
+      "description": "Executive operations toolkit. Board metrics standard and the monthly board pack command, with quarter-to-date OKR progress. Depends on house_standards.",
       "version": "1.0.0"
     }
   ]

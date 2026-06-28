@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "type": "url",
+      "url": "{{ATLASSIAN_MCP_URL}}",
+      "description": "Jira, read only here, for OKR objectives and key results. Replace with the official Atlassian remote MCP URL, or authorize Jira through the Cowork connector directory instead."
+    },
+    "looker": {
+      "type": "url",
+      "url": "{{LOOKER_MCP_URL}}",
+      "description": "Looker, read only, for growth and product metrics. Replace with your Looker remote MCP endpoint, or wire a custom connector in Cowork. Not part of the default connector set."
+    },
+    "netsuite": {
+      "type": "url",
+      "url": "{{NETSUITE_MCP_URL}}",
+      "description": "NetSuite, read only, for the monthly financial report. Replace with your NetSuite remote MCP endpoint, or wire a custom connector in Cowork. Not part of the default connector set."
+    }
+  }
+}

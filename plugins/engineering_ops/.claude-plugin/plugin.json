@@ -1,0 +1,12 @@
+{
+  "name": "engineering_ops",
+  "version": "1.0.0",
+  "description": "Engineering operations toolkit. Ticket health standards and the morning report command.",
+  "author": {
+    "name": "{{OWNER_NAME}}"
+  },
+  "keywords": ["engineering", "jira", "reporting", "operations"],
+  "requires": {
+    "plugins": ["house_standards"]
+  }
+}

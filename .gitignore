@@ -1,0 +1,8 @@
+# Local per user config, never commit real keys
+config/config.md
+config.md
+**/config.md
+
+# Generated output
+output/*
+!output/.gitkeep

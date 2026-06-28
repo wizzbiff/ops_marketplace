@@ -1,0 +1,25 @@
+{
+  "name": "ops_marketplace",
+  "owner": {
+    "name": "{{OWNER_NAME}}",
+    "email": "{{OWNER_EMAIL}}"
+  },
+  "metadata": {
+    "description": "Private marketplace of operations plugins. House standards plus per domain toolkits.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "house_standards",
+      "source": "./plugins/house_standards",
+      "description": "Shared tone and formatting standard for every operational report. Install alongside any domain plugin.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "engineering_ops",
+      "source": "./plugins/engineering_ops",
+      "description": "Engineering operations toolkit. Ticket health standards and the morning report command. Depends on house_standards.",
+      "version": "1.0.0"
+    }
+  ]
+}

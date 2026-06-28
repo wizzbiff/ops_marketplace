@@ -1,0 +1,9 @@
+{
+  "name": "house_standards",
+  "version": "1.0.0",
+  "description": "Shared tone and formatting standard for every operational report across the org.",
+  "author": {
+    "name": "{{OWNER_NAME}}"
+  },
+  "keywords": ["standards", "style", "reporting"]
+}

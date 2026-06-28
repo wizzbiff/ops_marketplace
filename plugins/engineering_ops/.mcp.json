@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "type": "url",
+      "url": "{{ATLASSIAN_MCP_URL}}",
+      "description": "Jira and Confluence. Replace with the official Atlassian remote MCP URL from Atlassian's docs, or authorize Jira through the Cowork connector directory instead."
+    }
+  }
+}

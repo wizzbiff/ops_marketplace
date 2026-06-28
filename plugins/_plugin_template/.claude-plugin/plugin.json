@@ -1,0 +1,12 @@
+{
+  "name": "{{PLUGIN_NAME}}",
+  "version": "0.1.0",
+  "description": "{{ONE_LINE_DESCRIPTION}}",
+  "author": {
+    "name": "{{OWNER_NAME}}"
+  },
+  "keywords": ["{{KEYWORD}}"],
+  "requires": {
+    "plugins": ["house_standards"]
+  }
+}

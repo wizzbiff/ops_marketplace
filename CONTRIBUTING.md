@@ -2,6 +2,15 @@
 
 This repo is a shared standard distributed as plugins. Changes to skills and standards affect everyone who installs them, so they are deliberate and versioned.
 
+## Source of truth and keeping in sync
+
+This marketplace is a *derived packaging*, not the source. The source of truth is the sibling repo **ops_automations**, a folder library where the same standards and tasks are authored as plain markdown. Here they are repackaged as plugins: standards become skills, tasks become namespaced commands.
+
+* **Author upstream, not here.** Make standard and task changes in ops_automations first, then port them into this repo. Do not edit a skill or command here and expect it to flow back; this repo is downstream.
+* **Drift is silent.** Nothing links the two repos automatically. When a standard changes upstream, the matching skill here is stale until someone re-ports it by hand. Treat any library change as a to-do against this repo.
+* **A port is a transformation, not copy-paste.** A standard file becomes a SKILL.md whose description triggers loading; a task plus its output template become a single command file; repo-relative path pointers become skill-name references; and the library's per-task config files collapse into this repo's single shared config.example.md as sections. Expect judgement each time.
+* **Parity is a snapshot.** When a sync lands (most recently PR #1, 2026-06-28), the two repos match at that moment only. Re-sync deliberately when the library moves. This repo is intentionally a periodically refreshed mirror, kept parked until its standards settle and real installers exist.
+
 ## Conventions
 
 * **Placeholders.** Every value an adopter supplies is `{{UPPER_SNAKE_CASE}}` and lives only in config.example.md or in a template file. Never in a skill or a committed manifest.

@@ -2,12 +2,10 @@
 
 A private Claude Cowork plugin marketplace. It houses one shared standards plugin and one plugin per domain. Engineering ops and executive ops ship today. Any further domain drops in beside them without disturbing what already works.
 
-## How the old repo maps onto plugins
+## How the ops_automations repo maps onto plugins. See the ops_automations repo for reference: https://github.com/wizzbiff/ops_automations
 
-If you saw the earlier markdown version of this, here is the translation. Nothing was thrown away, it was repackaged.
-
-* The shared standards became skills. `style` is now the `report_style` skill in house_standards. The ticket definitions are now the `ticket_standards` skill in engineering_ops.
-* Each task became a namespaced slash command. The morning report is now `/engineering_ops:morning_report`.
+* The shared standards become skills. `style` is now the `report_style` skill in house_standards. The ticket definitions are now the `ticket_standards` skill in engineering_ops.
+* Each task becomes a namespaced slash command. The morning report is now `/engineering_ops:morning_report`.
 * The connectors are declared by the plugin instead of wired by hand.
 * The repo itself is now a marketplace, so people install instead of clone, and updates flow when you merge a PR.
 * Config stays exactly where it was: a local `config.md` each person keeps in their own working folder, never committed.

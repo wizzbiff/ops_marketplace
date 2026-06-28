@@ -1,8 +1,8 @@
 # Ops Marketplace
 
-A private Claude Cowork plugin marketplace. It houses one shared standards plugin and one plugin per domain. Engineering ops and executive ops ship today. Any further domain drops in beside them without disturbing what already works.
+A private Claude Cowork plugin marketplace. It houses one shared standards plugin and one plugin per domain. Engineering ops and executive ops ship today. Any further domain drops in beside them without disturbing what already works. This repo is a Claude Cowork plugin marketplace ported from the ops_automations repo.
 
-## How the ops_automations repo maps onto plugins. See the ops_automations repo for reference: https://github.com/wizzbiff/ops_automations
+## How the ops_automations repo maps to this marketplace repo
 
 * The shared standards become skills. `style` is now the `report_style` skill in house_standards. The ticket definitions are now the `ticket_standards` skill in engineering_ops.
 * Each task becomes a namespaced slash command. The morning report is now `/engineering_ops:morning_report`.

@@ -1,12 +1,24 @@
 # engineering_ops
 
-The engineering operations toolkit. Reads your teams' Jira, classifies ticket health against a shared standard, and produces reports. The morning report is the first command. More commands (ticket research, weekly rollup) drop in beside it without new standards.
+The engineering operations toolkit. Reads your teams' Jira, your own inbox and calendar, and your repos, classifies and triages against shared standards, and produces reports and briefs. Four commands ship today, each reusing the plugin's skills rather than restating definitions.
 
 ## Contents
 
-* skills/ticket_standards: definitions of blocked, at risk, and stale, thresholds, escalation, and JQL patterns. Loads automatically for any ticket report.
-* commands/morning_report: the `/engineering_ops:morning_report` slash command. Orchestration plus the report's output shape.
-* .mcp.json and connectors.md: the Atlassian and Slack connectors this plugin needs.
+Skills, loaded automatically when a command needs them:
+
+* skills/ticket_standards: blocked, at risk, and stale, thresholds, escalation, and JQL patterns. The base for every engineering command.
+* skills/personal_triage: what counts as "needs my attention" across email, Slack, Jira, and calendar, plus dedup, ranking, and caps. Reuses ticket_standards for Jira.
+* skills/research_standards: what a ready-to-start ticket brief contains and how to gather it, including GitHub matching by key and the fact-versus-inference rule.
+* skills/flow_standards: the weekly flow and risk view — week window, throughput, cycle time, aging, persistent blockers, trend, and the weekly escalation lens. Reuses ticket_standards.
+
+Commands:
+
+* commands/morning_report: `/engineering_ops:morning_report`. Morning ticket health report by team, posted to Slack.
+* commands/daily_personal_brief: `/engineering_ops:daily_personal_brief`. A private morning digest of your email, Slack, Jira, and calendar, delivered as a Slack DM to self.
+* commands/ticket_research: `/engineering_ops:ticket_research`. On demand, takes a ticket and assembles a ready-to-start brief, optionally posting a pointer comment back to the ticket.
+* commands/weekly_leadership_rollup: `/engineering_ops:weekly_leadership_rollup`. Weekly flow and risk rollup across teams for leadership, with week-over-week trend, posted to Slack.
+
+* .mcp.json and connectors.md: the connectors these commands need. See connectors.md for which command uses which.
 
 ## Depends on
 

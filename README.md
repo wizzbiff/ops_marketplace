@@ -1,8 +1,6 @@
 # Ops Marketplace
 
-A private Claude Cowork plugin marketplace. It houses one shared standards plugin and one plugin per domain. Engineering ops ships today. Executive ops and any other domain drop in beside it without disturbing what already works.
-
-Suggested repo name: `ops_marketplace`. Rename to whatever fits your org.
+A private Claude Cowork plugin marketplace. It houses one shared standards plugin and one plugin per domain. Engineering ops and executive ops ship today. Any further domain drops in beside them without disturbing what already works.
 
 ## How the old repo maps onto plugins
 
@@ -40,8 +38,8 @@ Each plugin is self contained: its own `.claude-plugin/plugin.json`, its `skills
 | Plugin | What it is | Commands | Connectors |
 |--------|-----------|----------|------------|
 | house_standards | shared report tone and formatting | none, skills only | none |
-| engineering_ops | ticket health standard and reports | /engineering_ops:morning_report | Atlassian, Slack |
-| _planned_ executive_ops | board metrics standard and a board pack command | /executive_ops:board_pack | to be decided |
+| engineering_ops | ticket health, personal triage, research, and flow standards | /engineering_ops:morning_report, /engineering_ops:daily_personal_brief, /engineering_ops:ticket_research, /engineering_ops:weekly_leadership_rollup | Atlassian, Slack, Gmail or M365, Google Calendar or Outlook, GitHub |
+| executive_ops | board metrics standard and the monthly board pack | /executive_ops:board_pack | Looker, NetSuite, Atlassian, Slack |
 
 ## Adopt it
 
